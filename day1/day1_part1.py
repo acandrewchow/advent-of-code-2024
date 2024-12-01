@@ -1,7 +1,7 @@
-# day 1
+# day 1 part 1
 def read_file():
 
-    with open("day1.txt", "r") as file:
+    with open("data.txt", "r") as file:
         list1 = []
         list2 = []
         
@@ -26,6 +26,9 @@ def solution(list1, list2):
 
     return total_distance
 
+
 list1, list2 = read_file()
 
-print(solution(list1, list2))
+total_distance = solution(list1, list2)
+
+print("Total Distance:", total_distance)
